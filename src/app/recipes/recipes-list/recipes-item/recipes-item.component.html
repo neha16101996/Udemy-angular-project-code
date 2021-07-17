@@ -1,0 +1,15 @@
+<a href="#"
+ class="list-group-item clearfix"
+(click)="onSelected()">
+<div class="float-start">
+    <h4 class="list-group-item-heading">{{ receipe.name}}</h4>
+    <p class="list-group-item-text">{{ receipe.description }}</p>
+</div>
+<br>
+<span class="float-end">
+ <img 
+  [src]="receipe.imagePath"
+  alt="{{ receipe.name }}"
+  class="image-responsive" style="max-height:50px;">
+</span>
+</a>
